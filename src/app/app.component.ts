@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  currentPage: string = 'Recipe';
+
+  changePage(newPage: string){
+    this.currentPage = newPage;
+  }
 }
