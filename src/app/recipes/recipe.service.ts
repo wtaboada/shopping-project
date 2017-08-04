@@ -20,7 +20,7 @@ export class RecipeService {
         new Recipe(
           'A Test Recipe 2',
           'This is simply a test 2',
-          'https://static01.nyt.com/images/2015/08/14/dining/14ROASTEDSALMON/14ROASTEDSALMON-superJumbo.jpg',
+          'http://www.seriouseats.com/recipes/assets_c/2016/05/20160503-fava-carrot-ricotta-salad-recipe-1-thumb-1500xauto-431710.jpg',
           [
             new Ingredient('Buns', 2),
             new Ingredient('Meat', 1)
