@@ -10,6 +10,7 @@ export class RecipeService {
 
     private recipes: Recipe[] = [
         new Recipe(
+          1,
           'A Test Recipe',
           'This is simply a test',
           'https://static01.nyt.com/images/2015/08/14/dining/14ROASTEDSALMON/14ROASTEDSALMON-superJumbo.jpg',
@@ -18,6 +19,7 @@ export class RecipeService {
             new Ingredient('French Fries', 20)
           ]),
         new Recipe(
+          2,
           'A Test Recipe 2',
           'This is simply a test 2',
           'http://www.seriouseats.com/recipes/assets_c/2016/05/20160503-fava-carrot-ricotta-salad-recipe-1-thumb-1500xauto-431710.jpg',
@@ -29,6 +31,12 @@ export class RecipeService {
 
     constructor(private shoppingListService: ShoppingListService) {
 
+    }
+
+    getRecipe(id: number) {
+      return this.recipes.find(function(recipe){
+        return recipe.id == id;
+      })
     }
 
     getRecipes() {
